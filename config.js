@@ -1,13 +1,13 @@
 "use strict"
 
 module.exports = {
-  url: "https://developer-diary.netlify.com",
+  url: "",
   title: "Rubber Duck",
   tagline: "\"Quack quack quack...\"",
   copyright: "© 2019 VietVu, All rights reserved",
   author: {
     name: "Rubber Duck",
-    bio: "Self-taught web developer and whisky aficionado",
+    bio: "Thợ xây biết code",
     contacts: {
       linkedin: "https://www.linkedin.com/in/vu-viet-b8ba78108/",
       github: "https://github.com/vietvu175",
