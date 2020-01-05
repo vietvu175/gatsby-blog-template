@@ -4,14 +4,16 @@
 }
 
 .heading {
-  font-family: "Raleway";
+  font-family: "Be Vietnam";
 }
 
 .sidebar {
     width: 90%;
 }
 
-
+.post-main {
+  min-height: 100vh;
+}
 
 
 @media only screen and (max-width: 850px) {

@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
               stackoverflow
               freecodecamp
               twitter
+              facebook
             }
           }
         }
@@ -40,7 +41,8 @@ const Layout = ({ children }) => {
             siteTitle={data.site.siteMetadata.title}
             tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
-            contacts={data.site.siteMetadata.contacts} />
+            contacts={data.site.siteMetadata.contacts}
+          />
           <div
             style={{
               margin: `0 auto`,
@@ -48,14 +50,10 @@ const Layout = ({ children }) => {
               paddingTop: 0,
             }}
           >
-            <main className="p-4">{children}</main>
+            <main className="pt-4 pb-4 pl-0 pr-0">{children}</main>
             <footer className="text-center">
-              <hr/>
-              <p className="d-inline">© {new Date().getFullYear()} <a className="text-info" href="https://willjw3.github.io/">willjw3</a>, All Rights Reserved.</p>
-              <p className="mt-5 text-muted d-inline"><i> Built with
-                            {` `}
-                <a className="text-info" href="https://www.gatsbyjs.org">Gatsby</a></i>
-              </p>
+              <hr />
+              <p className="d-inline">© {new Date().getFullYear()} <a className="text-info" href="https://github.com/vietvu175">Viet Vu</a>, All Rights Reserved.</p>
             </footer>
           </div>
         </>

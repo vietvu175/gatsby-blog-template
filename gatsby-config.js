@@ -15,6 +15,7 @@ module.exports = {
       stackoverflow: siteConfig.author.contacts.stackoverflow,
       freecodecamp: siteConfig.author.contacts.freecodecamp,
       twitter: siteConfig.author.contacts.twitter,
+      facebook: siteConfig.author.contacts.facebook,
     },
     labels: siteConfig.labels,
   },
@@ -66,9 +67,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Raleway`,
+          `Be Vietnam`,
           `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
-        ]
+        ],
+        display: 'swap'
       }
     },
     {
@@ -80,7 +82,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

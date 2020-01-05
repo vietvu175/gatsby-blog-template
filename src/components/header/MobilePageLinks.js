@@ -4,11 +4,21 @@ import { Link } from "gatsby"
 const MobilePages = () => {
     return (
         <div className="mobile-pages-main">
-            <div className="text-center">
-                <p className="d-inline p-4"><Link to="/"><span className="text-dark">Blog Home</span></Link></p>
-                <p className="d-inline p-4"><Link to="/about"><span className="text-dark">About</span></Link></p>
-                <p className="d-inline p-4"><Link to="/archive"><span className="text-dark">Archive</span></Link></p>
-            </div>
+            <Link to="/">
+                <div className="text-left" style={{ padding: "10px 0px" }}>
+                    <p className="d-inline p-3 text-dark">Blog Home</p>
+                </div>
+            </Link>
+            <Link to="/about">
+                <div className="text-left" style={{ padding: "10px 0px", borderTop: "1px solid #cdcdcd" }}>
+                    <p className="d-inline p-3 text-dark">About</p>
+                </div>
+            </Link>
+            <Link to="/archive">
+                <div className="text-left" style={{ padding: "10px 0px", borderTop: "1px solid #cdcdcd" }}>
+                    <p className="d-inline p-3 text-dark">Archive</p>
+                </div>
+            </Link>
         </div>
     )
 }

@@ -2,19 +2,19 @@
 
 module.exports = {
   url: "https://developer-diary.netlify.com",
-  title: "Developer Diary",
-  tagline: "Autodidact developer and sometimes hoop-jumper",
-  copyright: "© 2019 willjw3, All rights reserved",
+  title: "Rubber Duck",
+  tagline: "\"Quack quack quack...\"",
+  copyright: "© 2019 VietVu, All rights reserved",
   author: {
-    name: "WILL JAY",
+    name: "Rubber Duck",
     bio: "Self-taught web developer and whisky aficionado",
     contacts: {
-      linkedin: "https://www.linkedin.com/in/will-ward-65234a170/",
-      github: "https://github.com/willjw3",
-      stackoverflow:
-        "https://stackoverflow.com/users/10262432/will-ward?tab=profile",
-      freecodecamp: "https://www.freecodecamp.org/willjw3",
-      twitter: "https://twitter.com/willjw3",
+      linkedin: "https://www.linkedin.com/in/vu-viet-b8ba78108/",
+      github: "https://github.com/vietvu175",
+      facebook: "https://www.facebook.com/viet.vu.125",
+      stackoverflow:"",
+      freecodecamp: "",
+      twitter: "",
     },
   },
   labels: [

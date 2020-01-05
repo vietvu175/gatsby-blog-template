@@ -1,16 +1,20 @@
 .head-main {
   width: 100%;
-  position: sticky;
   z-index: 1;
   top: 0;
-  display: flex;
-  flex-direction: column;
+  background: black; 
+  box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+  display: none;
 }
 
 .head-elements {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0.75rem;
 }
 
 .social-links {
@@ -18,7 +22,6 @@
   flex-direction: row;
   justify-content: space-around;
 }
-
 
 .bottom-bar {
   width: 100%;
@@ -30,15 +33,17 @@
 .mobile-pages-main {
   width: 100%;
   background: white;
+  margin: 0;
+  padding: 0 0.75rem;
   display: none;
 }
 .head-logo {
-  font-family: "Raleway";
-  font-size: 1.75rem;
+  font-family: "Be Vietnam";
+  font-size: 1.2rem;
 }
 
 small {
-    font-family: "Raleway";
+    font-family: "Be Vietnam";
 }
 
 .mobile-bio-main {
@@ -46,9 +51,17 @@ small {
   display: none;
 }
 
+.profile-img{
+  max-width: 40px;
+  margin-bottom: 0;
+}
+
 
 
 @media only screen and (max-width: 850px) {
+  .head-main{
+    display: block;
+  }
   .bottom-bar{display: flex;}
   .social-links{display: none;}
   .mobile-pages-main{display: block;}

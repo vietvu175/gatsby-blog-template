@@ -1,30 +1,21 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-
-import MobileSocialLinks from "./MobileSocialLinks"
-import MobilePageLinks from "./MobilePageLinks"
-import SocialLinks from "./SocialLinks"
-import MobileBio from "./MobileBio"
+import Hamburger from "./Hamburger"
+import MobilePageLinks from './MobilePageLinks'
+import logo from "../../images/logo.jpg"
 import "./header.css"
 
 const Header = ({ siteTitle, tagline, author, contacts }) => {
-
+  const [open, setOpen] = useState(false)
+  const handleClickHamburger = () => {
+    setOpen(prevState => !prevState)
+  }
   return (
-    <header
-      className="head-main"
-      style={{
-        background: `black`
-      }}
-    >
-      <div className="head-elements"
-        style={{
-          margin: `0`,
-          padding: `.75rem`
-        }}
-      >
-        <h1 className="head-logo ml-4" style={{ margin: 0 }}>
+    <nav className="head-main">
+      <div className="head-elements">
+        <h1 className="head-logo" style={{ margin: 0 }}>
           <Link
             to="/"
             style={{
@@ -32,15 +23,17 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
               textDecoration: `none`,
             }}
           >
+            <img src={logo} className="profile-img mr-2" alt="" />
             {siteTitle}
           </Link>
         </h1>
-        <SocialLinks contacts={contacts} />
+        {/* eslint-disable-next-line */}
+        <div onClick={handleClickHamburger} className="cursor-pointer">
+          <Hamburger open={open} />
+        </div>
       </div>
-      <MobileSocialLinks contacts={contacts} />
-      <MobilePageLinks />
-      <MobileBio author={author} />
-    </header>
+      {open ? <MobilePageLinks /> : undefined}
+    </nav>
   )
 }
 
