@@ -1,4 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
 ## Features
 - Ready to go - Blog author name, author image, etc,... can be easily added using a config file.
 - Blog posts created as markdown files. It's easy to get started with markdown if you're unfamiliar - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -72,6 +73,13 @@ date: '2019-05-29'
 This starter already includes the tech tags you can see in the live demo. To use them, add the appropriate tag name to the `tags` array in the frontmatter of your post. Consult the `config.js` file to see the tag properties and get the tag name to be supplied to the `tags` array in the frontmatter.<br>
 To make a new tag, create a new "label" in `config.js`, find a suitable svg icon, and paste the svg path in as the value for the "name" property of the label. Have a look at the existing labels in the `config.js` file and all should soon be clear. A good place to look for svg icons is at [simple icons](https://simpleicons.org/). 
 
+## Contribute
+- Fork the repo
+- Create your feature branch (git checkout -b feature/fooBar)
+- Commit your changes (git commit -am 'Add some fooBar')
+- Push to the branch (git push origin feature/fooBar)
+- Create a new Pull Request
+
 
 ## 🎓 Learning Gatsby
 
@@ -83,4 +91,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/44291758-7170-4abd-bb8c-68a6839456b1/deploy-status)](https://app.netlify.com/sites/rubberduck-demo/deploys)
+
