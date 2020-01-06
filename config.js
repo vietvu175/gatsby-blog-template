@@ -1,7 +1,7 @@
 "use strict"
 
 module.exports = {
-  url: "",
+  url: "https://vitcaosu.com",
   title: "Rubber Duck",
   tagline: "\"Quack quack quack...\"",
   copyright: "© 2019 VietVu, All rights reserved",
