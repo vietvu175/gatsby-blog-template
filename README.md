@@ -20,7 +20,7 @@ npm install -g gatsby-cli
 ```
 Install this starter with your name of choice for your blog:
 ```
-gatsby new your-blog-name https://github.com/willjw3/gatsby-starter-developer-diary.git
+git clone https://github.com/vietvu175/gatsby-blog-template.git your-blog-name
 ```
 Navigate into your new project's directory:
 ```
