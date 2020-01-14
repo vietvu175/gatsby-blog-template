@@ -7,7 +7,6 @@ import {
 
 
 const SocialLinks = ({ contacts }) => {
-    console.log('==========>contacts ', contacts);
     return (
         <div className="social-links float-right mr-4">
             <a className="text-primary ml-4"

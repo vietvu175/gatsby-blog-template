@@ -4,6 +4,7 @@ p, .title {
 }
 
 .index-main {
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 } 

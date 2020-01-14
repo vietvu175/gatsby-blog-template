@@ -6,26 +6,13 @@ import "./index.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/Sidebar"
-import TechTag from "../components/tags/TechTag"
+import Post from '../components/Post'
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   const labels = data.site.siteMetadata.labels
   const currentPage = 1
   const nextPage = (currentPage + 1).toString()
-
-  const getTechTags = (tags) => {
-    const techTags = []
-    tags.forEach((tag, i) => {
-      labels.forEach((label) => {
-        if (tag === label.tag) {
-          techTags.push(<TechTag key={i} tag={label.tag} tech={label.tech} name={label.name} size={label.size} color={label.color} />)
-        }
-      })
-    })
-    return techTags
-  }
-
 
   return (
     <Layout>
@@ -36,27 +23,9 @@ const IndexPage = ({ data }) => {
         </div>
         <div className="post-list-main">
           {posts.map((post) => {
-            const tags = post.node.frontmatter.tags
             return (
-              <div key={post.node.id} className="container mt-5">
-                <Link
-                  to={post.node.fields.slug}
-                  className="text-dark"
-                >
-                  <h2 className="title">{post.node.frontmatter.title}</h2>
-                </Link>
-                <small className="d-block text-info"><i>Posted on {post.node.frontmatter.date}</i>
-                </small>
-                <p className="mt-3 d-inline">{post.node.excerpt}</p>
-                <Link
-                  to={post.node.fields.slug}
-                  className="text-primary"
-                >
-                  <small className="d-inline-block ml-3"> Read full post</small>
-                </Link>
-                <div className="d-block">
-                  {getTechTags(tags)}
-                </div>
+              <div key={post.node.id} className="mt-5">
+                <Post post={post} labels={labels}/>
               </div>
             )
           })}
@@ -87,7 +56,7 @@ export const pageQuery = graphql`
              }
            }
            allMarkdownRemark(
-             limit: 3
+             limit: 6
              sort: { fields: [frontmatter___date], order: DESC }
              filter: { frontmatter: { published: { eq: true } } }
            ) {
@@ -99,7 +68,7 @@ export const pageQuery = graphql`
                  id
                  frontmatter {
                    title
-                   date(formatString: "MMMM DD, YYYY")
+                   date(formatString: "DD-MM-YYYY")
                    tags
                  }
                  fields {

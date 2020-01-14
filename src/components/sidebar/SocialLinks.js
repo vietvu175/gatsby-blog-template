@@ -10,7 +10,7 @@ import "./sidebar.css"
 const SocialLinks = ({ contacts }) => {
     return (
         <>
-            <h4>Social Links</h4>
+            <h4>Liên kết</h4>
             <div className="side-social-links mt-3 mb-3">
                 <a className="text-secondary pt-2 pb-2 pr-2 pl-0"
                     href={contacts.linkedin}>

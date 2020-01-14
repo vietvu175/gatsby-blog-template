@@ -7,7 +7,7 @@
 }
 
 .page-links {
-    padding-top: 3rem;
+    padding-top: 2rem;
     font-family: "Be Vietnam";
 }
 
@@ -22,6 +22,6 @@ small, h3, p {
 }
 
 .author-bio {
-    font-size: 2vw;
+    font-size: 32px;
 }
 

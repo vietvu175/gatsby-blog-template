@@ -44,7 +44,7 @@ const BlogPost = (props) => {
               {getTechTags(tags)}
             </div>
             <br />
-            <small><i>Published on </i> {post.frontmatter.date}</small>
+            <small><i>Đăng ngày </i> {post.frontmatter.date}</small>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <CustomShareBlock title={post.frontmatter.title} siteName={siteName} url={url} />
           </div>
@@ -73,7 +73,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD-MM-YYYY")
         tags
       }
     }

@@ -3,7 +3,7 @@ pre[class*="language-"] {
 	color: rgb(20, 7, 7);
 	background: none;
 	text-shadow: none;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: "Be Vietnam";
 	font-size: 1em;
 	text-align: left;
 	white-space: pre;
@@ -44,36 +44,10 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Code blocks */
 pre[class*="language-"] {
 	box-shadow: 1px 1px 3px;
-    max-width: 750px;
+		width: 100%;
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-}
-
-@media only screen and (max-width: 1200px) {
-    pre[class*="language-"] {
-    max-width: 650px;
-    }
-}
-@media only screen and (max-width: 1100px) {
-    pre[class*="language-"] {
-    max-width: 550px;
-    }
-}
-@media only screen and (max-width: 1000px) {
-    pre[class*="language-"] {
-    max-width: 500px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    pre[class*="language-"] {
-    max-width: 400px;
-    }
-}
-@media only screen and (max-width: 450px) {
-    pre[class*="language-"] {
-    max-width: 350px;
-    }
 }
 
 :not(pre) > code[class*="language-"],

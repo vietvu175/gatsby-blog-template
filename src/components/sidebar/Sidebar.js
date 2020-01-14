@@ -5,7 +5,7 @@ import "./sidebar.css"
 
 import SocialLinks from "./SocialLinks"
 import TechTags from "./TechTags"
-
+import Categories from './Categories'
 
 const Sidebar = () => {
     return (
@@ -43,6 +43,7 @@ const Sidebar = () => {
                             node {
                                 frontmatter {
                                     tags
+                                    categories
                                 }
                             }
                         }
@@ -54,9 +55,12 @@ const Sidebar = () => {
                     <div className="sidebar-main border-right">
                         <Bio author={data.site.siteMetadata.author} tagline={data.site.siteMetadata.tagline} />
                         <div className="page-links">
-                            <Link to="/"><span className="text-dark d-block py-1">Blog</span></Link>
-                            <Link to="/about"><span className="text-dark d-block py-1">About</span></Link>
-                            <Link to="/archive"><span className="text-dark d-block py-1">Archive</span></Link>
+                            <Link to="/"><span className="text-dark d-block py-1">Trang chủ</span></Link>
+                            <Link to="/about"><span className="text-dark d-block py-1">Giới thiệu</span></Link>
+                            <Link to="/archive"><span className="text-dark d-block py-1">Tất cả bài viết</span></Link>
+                        </div>
+                        <div className="mt-4">
+                            <Categories edges={data.allMarkdownRemark.edges}/>
                         </div>
                         <div className="tech-tags mt-4">
                             <TechTags labels={data.site.siteMetadata.labels} posts={data.allMarkdownRemark.edges} />

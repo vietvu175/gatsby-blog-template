@@ -2,9 +2,9 @@
 
 module.exports = {
   url: "https://vitcaosu.com",
-  title: "Rubber Duck",
+  title: "Vịt cao su",
   tagline: "\"Quack quack quack...\"",
-  copyright: "© 2019 VietVu, All rights reserved",
+  copyright: "© 2020 VietVu, All rights reserved",
   author: {
     name: "Rubber Duck",
     bio: "Thợ xây biết code",

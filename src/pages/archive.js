@@ -37,7 +37,7 @@ const ArchivePage = ({ data }) => {
                     {posts.map((post) => {
                         const tags = post.node.frontmatter.tags
                         return (
-                            <div key={post.node.id} className="container mt-5">
+                            <div key={post.node.id} className="mt-5">
                                 <Link
                                     to={post.node.fields.slug}
                                     className="text-dark"
@@ -93,7 +93,7 @@ export const pageQuery = graphql`
                  id
                  frontmatter {
                    title
-                   date(formatString: "MMMM DD, YYYY")
+                   date(formatString: "DD-MM-YYYY")
                    tags
                  }
                  fields {

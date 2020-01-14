@@ -1,5 +1,6 @@
 ---
 title: 'JavaScript Regular Expressions and the Test() Method'
+categories: ["Regex101"]
 tags: ["javascript"]
 published: true
 date: '2019-01-06'
