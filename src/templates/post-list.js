@@ -35,12 +35,12 @@ const PostList = (props) => {
                     <div className="text-center mt-4">
                         {!isFirst && (
                             <Link to={prevPage} rel="prev" style={{ textDecoration: `none` }}>
-                                <span className="text-dark">← Previous Page</span>
+                                <span className="text-dark">← Trang trước</span>
                             </Link>
                         )}
                         {!isLast && isFirst && (
                             <Link to={nextPage} rel="next" style={{ textDecoration: `none` }}>
-                                <span className="text-dark ml-5">Next Page →</span>
+                                <span className="text-dark ml-5">Trang sau →</span>
                             </Link>
                         )}
                     </div>
@@ -50,7 +50,7 @@ const PostList = (props) => {
     )
 }
 
-export const listQuery = graphql`
+export const pageQuery = graphql`
          query paginateQuery($skip: Int!, $limit: Int!) {
            site {
              siteMetadata {

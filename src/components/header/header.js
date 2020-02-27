@@ -4,10 +4,10 @@ import PropTypes from "prop-types"
 
 import Hamburger from "./Hamburger"
 import MobilePageLinks from './MobilePageLinks'
-import logo from "../../images/logo.jpg"
+import logo from "../../images/logo.png"
 import "./header.css"
 
-const Header = ({ siteTitle, tagline, author, contacts }) => {
+const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
   const handleClickHamburger = () => {
     setOpen(prevState => !prevState)

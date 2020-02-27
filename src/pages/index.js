@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 import "./index.css"
 
@@ -11,12 +11,10 @@ import Post from '../components/Post'
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   const labels = data.site.siteMetadata.labels
-  const currentPage = 1
-  const nextPage = (currentPage + 1).toString()
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} />
+      <SEO title="Trang chủ" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} />
       <div className="index-main">
         <div className="sidebar px-4 py-2">
           <Sidebar />
@@ -29,11 +27,6 @@ const IndexPage = ({ data }) => {
               </div>
             )
           })}
-          <div className="mt-4 text-center">
-            <Link to={nextPage} rel="next" style={{ textDecoration: `none` }}>
-              <span className="text-dark">Next Page →</span>
-            </Link>
-          </div>
         </div>
       </div>
     </Layout>

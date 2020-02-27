@@ -3,8 +3,8 @@ h4 {
 }
 
 .tech-tag {
-    background: black;
-    border-radius: 0%;
+    background: #414042;
+    border-radius: 4px;
     border-color: transparent;
     font-family: "Be Vietnam";
     font-size: .85rem;

@@ -42,7 +42,7 @@ const Categories = ({ pageContext, data }) => {
 
 Categories.propTypes = {
   pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -88,7 +88,7 @@ export const pageQuery = graphql`
             id
             frontmatter {
                 title
-                date(formatString: "MM-YYYY")
+                date(formatString: "DD-MM-YYYY")
                 categories
                 tags
             }

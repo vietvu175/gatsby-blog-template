@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-developer-diary",
+  "name": "vitcaosu-blog",
   "private": true,
-  "description": "A Gatsby blog template designed for web developers. Blazing fast, it includes beautful web developer topic tags and social-media links",
-  "version": "0.1.0",
-  "author": "willjw3 <https://github.com/willjw3>",
+  "description": "My personal blog",
+  "version": "1.0.0",
+  "author": "Viet Vu",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "bootstrap": "^4.3.1",
@@ -11,7 +11,10 @@
     "gatsby": "^2.7.1",
     "gatsby-image": "^2.1.1",
     "gatsby-plugin-emotion": "^4.0.7",
+    "gatsby-plugin-feed": "^2.3.26",
+    "gatsby-plugin-google-analytics": "^2.1.33",
     "gatsby-plugin-google-fonts": "^1.0.0",
+    "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
@@ -29,6 +32,7 @@
     "react-bootstrap": "^1.0.0-beta.8",
     "react-custom-share": "^0.4.8",
     "react-dom": "^16.8.6",
+    "react-facebook": "^8.1.4",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0"
   },

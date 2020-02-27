@@ -6,6 +6,12 @@
 
 .heading {
   font-family: "Be Vietnam";
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.62671rem;
+  font-weight: bold;
 }
 
 .sidebar {

@@ -1,0 +1,37 @@
+.subscribe-block{
+    max-width: 680px;
+    margin: auto;
+    text-align: center;
+    background: #414042;
+    color: #fce017;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px
+}
+.subscribe-block__action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+    padding: 4px;
+    widows: 100%;
+    border-radius: .125rem;
+}
+.subscribe-block__input {
+    box-sizing: border-box;
+    width: 75%;
+    border-style: none;
+    border-width: 0;
+    background: transparent;
+}
+
+.subscribe-block__input:focus{
+    border: none
+}
+
+.subscribe-block__button {
+    width: 25%;
+    background-color: #f98919;
+    color: #eee;
+    border-radius: 4px;
+}

@@ -3,11 +3,13 @@
 module.exports = {
   url: "https://vitcaosu.com",
   title: "Vịt cao su",
-  tagline: "\"Quack quack quack...\"",
+  tagline: "\"Thợ xây biết code\"",
   copyright: "© 2020 VietVu, All rights reserved",
+  facebookAppId: "",
+  mailchimpEndpoint: "",
   author: {
-    name: "Rubber Duck",
-    bio: "Thợ xây biết code",
+    name: "Vịt cao su",
+    bio: "",
     contacts: {
       linkedin: "https://www.linkedin.com/in/vu-viet-b8ba78108/",
       github: "https://github.com/vietvu175",

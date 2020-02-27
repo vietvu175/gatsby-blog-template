@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 
 const Categories = (props) => {
-  const { edges } = props;
+  const edges = props.edges || [];
   let categories = [];
 
   edges.forEach(({ node }) => {
